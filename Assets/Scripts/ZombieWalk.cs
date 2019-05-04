@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-
 public class ZombieWalk : MonoBehaviour
 {
 
@@ -13,25 +12,35 @@ public class ZombieWalk : MonoBehaviour
     Animator animator;
     private Vector3 posicaoAnterior;
     private Vector3 posicaoNova;
+    private GameObject Player; // adicione o player
 
     void Start()
     {
-        destino = Camera.main.transform;
+        Player = GameObject.FindGameObjectWithTag("Player");
         agente = GetComponent<NavMeshAgent>();
-        agente.destination = destino.position;
         animator = GetComponent<Animator>();
-        posicaoNova = agente.nextPosition;
+        InvokeRepeating("UpdateZombieDestination", 0.0f, 1.0f);
     }
+    void UpdateZombieDestination()
+    {        
+        if (Player != null) {
+            agente.destination = Player.transform.position; 
+        }
 
+        posicaoNova = agente.nextPosition;
+    }   
     private void FixedUpdate()
     {
+        if (walking) {
+            Debug.Log("teste");
+        }
         Walking();
         animator.SetBool("Walk", walking);
         animator.SetBool("Attack", !walking);
         
     }
     private void Walking()
-    {
+    {        
         if ((agente.nextPosition != agente.destination) && (posicaoAnterior != posicaoNova))
         {
             walking = true;

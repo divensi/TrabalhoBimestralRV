@@ -685,7 +685,7 @@ GameObject:
   - component: {fileID: 168952394204724379}
   - component: {fileID: 168952394204724376}
   m_Layer: 0
-  m_Name: Zombie 1
+  m_Name: Zombie
   m_TagString: Zombie
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -738,7 +738,53 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
-  m_WarningMessage: 
+  m_WarningMessage: '
+
+    Transform ''Bip01 L Toe0'' has been deleted
+
+    Transform ''Bip01 L Foot'' has been deleted
+
+    Transform ''Bip01 L Calf'' has been deleted
+
+    Transform ''Bip01 L Thigh'' has been deleted
+
+    Transform ''Bip01 R Toe0'' has been deleted
+
+    Transform ''Bip01 R Foot'' has been deleted
+
+    Transform ''Bip01 R Calf'' has been deleted
+
+    Transform ''Bip01 R Thigh'' has been deleted
+
+    Transform ''Bone01'' has been deleted
+
+    Transform ''Bip01 Head'' has been deleted
+
+    Transform ''Bip01 L Hand'' has been deleted
+
+    Transform ''Bip01 L Forearm'' has been deleted
+
+    Transform ''Bip01 L UpperArm'' has been deleted
+
+    Transform ''Bip01 L Clavicle'' has been deleted
+
+    Transform ''Bip01 R Hand'' has been deleted
+
+    Transform ''Bip01 R Forearm'' has been deleted
+
+    Transform ''Bip01 R UpperArm'' has been deleted
+
+    Transform ''Bip01 R Clavicle'' has been deleted
+
+    Transform ''Bip01 Neck'' has been deleted
+
+    Transform ''Bip01 Spine1'' has been deleted
+
+    Transform ''Bip01 Spine'' has been deleted
+
+    Transform ''Bip01 Pelvis'' has been deleted
+
+    Transform ''Bip01'' has been deleted'
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0

@@ -12,36 +12,50 @@ public class ZombieWalk : MonoBehaviour
     Animator animator;
     private Vector3 posicaoAnterior;
     private Vector3 posicaoNova;
-    private GameObject Player; // adicione o player
+    private GameObject Player; 
+    private bool morreu;
+    private AudioSource audioSource;
 
     void Start()
     {
+        morreu = false;
         Player = GameObject.FindGameObjectWithTag("Player");
         agente = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
-        InvokeRepeating("UpdateZombieDestination", 0.0f, 1.0f);
+        audioSource = GetComponent<AudioSource>();
+        InvokeRepeating("UpdateZombieDestination", 0.0f, 0.3f);
+        
     }
     void UpdateZombieDestination()
-    {        
+    {   
+        if (morreu){
+            return;
+        }
         if (Player != null) {
             agente.destination = Player.transform.position; 
         }
 
         posicaoNova = agente.nextPosition;
-    }   
-    private void FixedUpdate()
-    {
-        if (walking) {
-            Debug.Log("teste");
-        }
         Walking();
         animator.SetBool("Walk", walking);
         animator.SetBool("Attack", !walking);
         
+    }   
+    private void FixedUpdate()
+    {
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("Die")){
+            morreu = true;
+            audioSource.Stop();
+            agente.Stop();
+            Die();
+        }
+        
+        //UpdateZombieDestination();
+        
     }
     private void Walking()
-    {        
-        if ((agente.nextPosition != agente.destination) && (posicaoAnterior != posicaoNova))
+    {   
+        if ((agente.nextPosition != Player.transform.position) && (posicaoAnterior != posicaoNova))
         {
             walking = true;
         }
@@ -52,4 +66,9 @@ public class ZombieWalk : MonoBehaviour
         posicaoAnterior = posicaoNova;
         posicaoNova = agente.nextPosition;
     }
+    private void Die()
+    {
+        Destroy(gameObject,5.0f);
+    }
+
 }

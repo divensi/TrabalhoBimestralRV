@@ -24,12 +24,12 @@ public class HitableBodyPart : MonoBehaviour {
     {
         charaterDamage.OnBeingHit(bodyIdentification);
         animator.SetBool("Die", true);
-        Die();
+        //Die();
     }
 
     private void Die()
     {
-        Destroy(gameObject);
+        Destroy(gameObject,2.0f);
     }
 }
 

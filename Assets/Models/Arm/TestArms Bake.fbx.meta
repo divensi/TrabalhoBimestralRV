@@ -1,0 +1,217 @@
+fileFormatVersion: 2
+guid: 92ffbfb8b4178467980b760a0fd9312f
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: camera1
+    100002: Character1_Hips
+    100004: Character1_LeftArm
+    100006: Character1_LeftForeArm
+    100008: Character1_LeftHand
+    100010: Character1_LeftHandIndex1
+    100012: Character1_LeftHandIndex2
+    100014: Character1_LeftHandIndex3
+    100016: Character1_LeftHandIndex4
+    100018: Character1_LeftHandMiddle1
+    100020: Character1_LeftHandMiddle2
+    100022: Character1_LeftHandMiddle3
+    100024: Character1_LeftHandMiddle4
+    100026: Character1_LeftHandPinky1
+    100028: Character1_LeftHandPinky2
+    100030: Character1_LeftHandPinky3
+    100032: Character1_LeftHandPinky4
+    100034: Character1_LeftHandRing1
+    100036: Character1_LeftHandRing2
+    100038: Character1_LeftHandRing3
+    100040: Character1_LeftHandRing4
+    100042: Character1_LeftHandThumb1
+    100044: Character1_LeftHandThumb2
+    100046: Character1_LeftHandThumb3
+    100048: Character1_LeftHandThumb4
+    100050: Character1_LeftShoulder
+    100052: Character1_Reference
+    100054: Character1_RightArm
+    100056: Character1_RightForeArm
+    100058: Character1_RightHand
+    100060: Character1_RightHandIndex1
+    100062: Character1_RightHandIndex2
+    100064: Character1_RightHandIndex3
+    100066: Character1_RightHandIndex4
+    100068: Character1_RightHandMiddle1
+    100070: Character1_RightHandMiddle2
+    100072: Character1_RightHandMiddle3
+    100074: Character1_RightHandMiddle4
+    100076: Character1_RightHandPinky1
+    100078: Character1_RightHandPinky2
+    100080: Character1_RightHandPinky3
+    100082: Character1_RightHandPinky4
+    100084: Character1_RightHandRing1
+    100086: Character1_RightHandRing2
+    100088: Character1_RightHandRing3
+    100090: Character1_RightHandRing4
+    100092: Character1_RightHandThumb1
+    100094: Character1_RightHandThumb2
+    100096: Character1_RightHandThumb3
+    100098: Character1_RightHandThumb4
+    100100: Character1_RightShoulder
+    100102: Character1_Spine
+    100104: Character1_Spine1
+    100106: Character1_Spine2
+    100108: locator1
+    100110: locator2
+    100112: nurbsCircle1
+    100114: nurbsCircle2
+    100116: //RootNode
+    100118: viewarmsfinalMesh
+    400000: camera1
+    400002: Character1_Hips
+    400004: Character1_LeftArm
+    400006: Character1_LeftForeArm
+    400008: Character1_LeftHand
+    400010: Character1_LeftHandIndex1
+    400012: Character1_LeftHandIndex2
+    400014: Character1_LeftHandIndex3
+    400016: Character1_LeftHandIndex4
+    400018: Character1_LeftHandMiddle1
+    400020: Character1_LeftHandMiddle2
+    400022: Character1_LeftHandMiddle3
+    400024: Character1_LeftHandMiddle4
+    400026: Character1_LeftHandPinky1
+    400028: Character1_LeftHandPinky2
+    400030: Character1_LeftHandPinky3
+    400032: Character1_LeftHandPinky4
+    400034: Character1_LeftHandRing1
+    400036: Character1_LeftHandRing2
+    400038: Character1_LeftHandRing3
+    400040: Character1_LeftHandRing4
+    400042: Character1_LeftHandThumb1
+    400044: Character1_LeftHandThumb2
+    400046: Character1_LeftHandThumb3
+    400048: Character1_LeftHandThumb4
+    400050: Character1_LeftShoulder
+    400052: Character1_Reference
+    400054: Character1_RightArm
+    400056: Character1_RightForeArm
+    400058: Character1_RightHand
+    400060: Character1_RightHandIndex1
+    400062: Character1_RightHandIndex2
+    400064: Character1_RightHandIndex3
+    400066: Character1_RightHandIndex4
+    400068: Character1_RightHandMiddle1
+    400070: Character1_RightHandMiddle2
+    400072: Character1_RightHandMiddle3
+    400074: Character1_RightHandMiddle4
+    400076: Character1_RightHandPinky1
+    400078: Character1_RightHandPinky2
+    400080: Character1_RightHandPinky3
+    400082: Character1_RightHandPinky4
+    400084: Character1_RightHandRing1
+    400086: Character1_RightHandRing2
+    400088: Character1_RightHandRing3
+    400090: Character1_RightHandRing4
+    400092: Character1_RightHandThumb1
+    400094: Character1_RightHandThumb2
+    400096: Character1_RightHandThumb3
+    400098: Character1_RightHandThumb4
+    400100: Character1_RightShoulder
+    400102: Character1_Spine
+    400104: Character1_Spine1
+    400106: Character1_Spine2
+    400108: locator1
+    400110: locator2
+    400112: nurbsCircle1
+    400114: nurbsCircle2
+    400116: //RootNode
+    400118: viewarmsfinalMesh
+    2000000: camera1
+    2100000: viewarmsfinal
+    4300000: viewarmsfinalMesh
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: viewarmsfinalMesh
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

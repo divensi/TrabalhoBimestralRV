@@ -9,8 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 168952393403941997}
-  - component: {fileID: 168952393403941996}
-  - component: {fileID: 168952393403941998}
   - component: {fileID: 168952393403941999}
   m_Layer: 0
   m_Name: R Hand Colider
@@ -33,33 +31,6 @@ Transform:
   m_Father: {fileID: 168952394950032698}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 24.569, y: 64.401, z: -93.434006}
---- !u!64 &168952393403941996
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 168952393403941994}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 4300032, guid: ca84dfa82a770a34faf2f9ddac95981e, type: 3}
---- !u!114 &168952393403941998
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 168952393403941994}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28f246dce7cf9a94cacec73a1bcb6138, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bodyIdentification: 2
 --- !u!114 &168952393403941999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82,6 +53,8 @@ GameObject:
   m_Component:
   - component: {fileID: 168952393481475434}
   - component: {fileID: 168952393481475437}
+  - component: {fileID: 7645569314162762353}
+  - component: {fileID: 7957518455037362771}
   m_Layer: 0
   m_Name: L Spine1
   m_TagString: Zombie
@@ -161,6 +134,33 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.4200532, y: 0.031661347, z: 0.04192227}
     m_Extent: {x: 0.22127739, y: 0.1596856, z: 0.2592042}
   m_DirtyAABB: 0
+--- !u!64 &7645569314162762353
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168952393481475435}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300012, guid: ca84dfa82a770a34faf2f9ddac95981e, type: 3}
+--- !u!114 &7957518455037362771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168952393481475435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28f246dce7cf9a94cacec73a1bcb6138, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bodyIdentification: 1
 --- !u!1 &168952393605968882
 GameObject:
   m_ObjectHideFlags: 0
@@ -266,6 +266,8 @@ GameObject:
   m_Component:
   - component: {fileID: 168952393727364395}
   - component: {fileID: 168952393727364394}
+  - component: {fileID: 9131390954610095880}
+  - component: {fileID: 5064855306986944998}
   m_Layer: 0
   m_Name: ' L Thigh'
   m_TagString: Zombie
@@ -342,6 +344,33 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.0047156624, y: 0.11666237, z: -0.20246309}
     m_Extent: {x: 0.110179916, y: 0.12526919, z: 0.24441683}
   m_DirtyAABB: 0
+--- !u!64 &9131390954610095880
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168952393727364392}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300016, guid: ca84dfa82a770a34faf2f9ddac95981e, type: 3}
+--- !u!114 &5064855306986944998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168952393727364392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28f246dce7cf9a94cacec73a1bcb6138, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bodyIdentification: 1
 --- !u!1 &168952393730628995
 GameObject:
   m_ObjectHideFlags: 0
@@ -382,6 +411,8 @@ GameObject:
   m_Component:
   - component: {fileID: 168952393754986185}
   - component: {fileID: 168952393754986184}
+  - component: {fileID: 2940062140403621082}
+  - component: {fileID: 8810230674450572017}
   m_Layer: 0
   m_Name: ' L Pelvis'
   m_TagString: Zombie
@@ -459,6 +490,33 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.003456831, y: 0.07680747, z: 0.025609955}
     m_Extent: {x: 0.13643982, y: 0.11698, z: 0.1674015}
   m_DirtyAABB: 0
+--- !u!114 &2940062140403621082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168952393754986182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28f246dce7cf9a94cacec73a1bcb6138, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bodyIdentification: 1
+--- !u!64 &8810230674450572017
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168952393754986182}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300022, guid: ca84dfa82a770a34faf2f9ddac95981e, type: 3}
 --- !u!1 &168952393757416508
 GameObject:
   m_ObjectHideFlags: 0
@@ -531,6 +589,8 @@ GameObject:
   m_Component:
   - component: {fileID: 168952394002063721}
   - component: {fileID: 168952394002063720}
+  - component: {fileID: 1889859700505696693}
+  - component: {fileID: 2364020854849187147}
   m_Layer: 0
   m_Name: R UpperArm
   m_TagString: Zombie
@@ -608,6 +668,33 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.4028489, y: -0.015599415, z: -0.26588854}
     m_Extent: {x: 0.16875799, y: 0.13234702, z: 0.20884946}
   m_DirtyAABB: 0
+--- !u!64 &1889859700505696693
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168952394002063718}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300028, guid: ca84dfa82a770a34faf2f9ddac95981e, type: 3}
+--- !u!114 &2364020854849187147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168952394002063718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28f246dce7cf9a94cacec73a1bcb6138, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bodyIdentification: 1
 --- !u!1 &168952394043344653
 GameObject:
   m_ObjectHideFlags: 0
@@ -684,6 +771,7 @@ GameObject:
   - component: {fileID: 168952394204724378}
   - component: {fileID: 168952394204724379}
   - component: {fileID: 168952394204724376}
+  - component: {fileID: 3476391254937723465}
   m_Layer: 0
   m_Name: Zombie
   m_TagString: Zombie
@@ -738,53 +826,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
-  m_WarningMessage: '
-
-    Transform ''Bip01 L Toe0'' has been deleted
-
-    Transform ''Bip01 L Foot'' has been deleted
-
-    Transform ''Bip01 L Calf'' has been deleted
-
-    Transform ''Bip01 L Thigh'' has been deleted
-
-    Transform ''Bip01 R Toe0'' has been deleted
-
-    Transform ''Bip01 R Foot'' has been deleted
-
-    Transform ''Bip01 R Calf'' has been deleted
-
-    Transform ''Bip01 R Thigh'' has been deleted
-
-    Transform ''Bone01'' has been deleted
-
-    Transform ''Bip01 Head'' has been deleted
-
-    Transform ''Bip01 L Hand'' has been deleted
-
-    Transform ''Bip01 L Forearm'' has been deleted
-
-    Transform ''Bip01 L UpperArm'' has been deleted
-
-    Transform ''Bip01 L Clavicle'' has been deleted
-
-    Transform ''Bip01 R Hand'' has been deleted
-
-    Transform ''Bip01 R Forearm'' has been deleted
-
-    Transform ''Bip01 R UpperArm'' has been deleted
-
-    Transform ''Bip01 R Clavicle'' has been deleted
-
-    Transform ''Bip01 Neck'' has been deleted
-
-    Transform ''Bip01 Spine1'' has been deleted
-
-    Transform ''Bip01 Spine'' has been deleted
-
-    Transform ''Bip01 Pelvis'' has been deleted
-
-    Transform ''Bip01'' has been deleted'
+  m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -846,6 +888,102 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!82 &3476391254937723465
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168952394204724377}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: a80b4bf9f8d6141589698eeafd4de412, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.8
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 100
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 100
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &168952394215590924
 GameObject:
   m_ObjectHideFlags: 0
@@ -917,8 +1055,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 168952394318692136}
-  - component: {fileID: 168952394318692138}
-  - component: {fileID: 168952394318692139}
   m_Layer: 0
   m_Name: Bip01 Head
   m_TagString: Zombie
@@ -941,32 +1077,6 @@ Transform:
   m_Father: {fileID: 168952393653786793}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &168952394318692138
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 168952394318692137}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28f246dce7cf9a94cacec73a1bcb6138, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bodyIdentification: 0
---- !u!135 &168952394318692139
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 168952394318692137}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.1
-  m_Center: {x: -0.12, y: 0.012, z: 0}
 --- !u!1 &168952394395039800
 GameObject:
   m_ObjectHideFlags: 0
@@ -977,6 +1087,8 @@ GameObject:
   m_Component:
   - component: {fileID: 168952394395039803}
   - component: {fileID: 168952394395039802}
+  - component: {fileID: 6766128138797871255}
+  - component: {fileID: 7552888344183554271}
   m_Layer: 0
   m_Name: ' Head'
   m_TagString: Zombie
@@ -1055,6 +1167,33 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.40291405, y: 0.10811783, z: 0.00000026077032}
     m_Extent: {x: 0.16522883, y: 0.13977434, z: 0.08768336}
   m_DirtyAABB: 0
+--- !u!114 &6766128138797871255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168952394395039800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28f246dce7cf9a94cacec73a1bcb6138, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bodyIdentification: 0
+--- !u!64 &7552888344183554271
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168952394395039800}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300004, guid: ca84dfa82a770a34faf2f9ddac95981e, type: 3}
 --- !u!1 &168952394570136605
 GameObject:
   m_ObjectHideFlags: 0
@@ -1096,6 +1235,8 @@ GameObject:
   m_Component:
   - component: {fileID: 168952394589720394}
   - component: {fileID: 168952394589720397}
+  - component: {fileID: 1237854550040420865}
+  - component: {fileID: 352196926348932165}
   m_Layer: 0
   m_Name: ' R Thigh'
   m_TagString: Zombie
@@ -1172,6 +1313,33 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.004833117, y: -0.12025787, z: -0.20244738}
     m_Extent: {x: 0.10976149, y: 0.122868046, z: 0.24149007}
   m_DirtyAABB: 0
+--- !u!114 &1237854550040420865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168952394589720395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28f246dce7cf9a94cacec73a1bcb6138, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bodyIdentification: 1
+--- !u!64 &352196926348932165
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168952394589720395}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300018, guid: ca84dfa82a770a34faf2f9ddac95981e, type: 3}
 --- !u!1 &168952394603284974
 GameObject:
   m_ObjectHideFlags: 0
@@ -1213,6 +1381,8 @@ GameObject:
   m_Component:
   - component: {fileID: 168952394704468902}
   - component: {fileID: 168952394704468905}
+  - component: {fileID: 6036841099263615717}
+  - component: {fileID: 3926595399616463423}
   m_Layer: 0
   m_Name: R Spine
   m_TagString: Zombie
@@ -1292,6 +1462,33 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.010578424, y: -0.040485766, z: 0.2867816}
     m_Extent: {x: 0.16834362, y: 0.11889385, z: 0.22239278}
   m_DirtyAABB: 0
+--- !u!114 &6036841099263615717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168952394704468903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28f246dce7cf9a94cacec73a1bcb6138, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bodyIdentification: 1
+--- !u!64 &3926595399616463423
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168952394704468903}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300024, guid: ca84dfa82a770a34faf2f9ddac95981e, type: 3}
 --- !u!1 &168952394739228233
 GameObject:
   m_ObjectHideFlags: 0
@@ -1333,6 +1530,8 @@ GameObject:
   m_Component:
   - component: {fileID: 168952394860216166}
   - component: {fileID: 168952394860216169}
+  - component: {fileID: 1836815756099028494}
+  - component: {fileID: 2964044542106583138}
   m_Layer: 0
   m_Name: R Forearm
   m_TagString: Zombie
@@ -1408,6 +1607,33 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.26623687, y: -0.010918185, z: -0.47353753}
     m_Extent: {x: 0.14977261, y: 0.11890797, z: 0.19255403}
   m_DirtyAABB: 0
+--- !u!64 &1836815756099028494
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168952394860216167}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300030, guid: ca84dfa82a770a34faf2f9ddac95981e, type: 3}
+--- !u!114 &2964044542106583138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168952394860216167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28f246dce7cf9a94cacec73a1bcb6138, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bodyIdentification: 1
 --- !u!1 &168952394880112305
 GameObject:
   m_ObjectHideFlags: 0
@@ -1449,6 +1675,8 @@ GameObject:
   m_Component:
   - component: {fileID: 168952394931342542}
   - component: {fileID: 168952394931342545}
+  - component: {fileID: 8621606791985541582}
+  - component: {fileID: 7842431582343142309}
   m_Layer: 0
   m_Name: L Spine
   m_TagString: Zombie
@@ -1528,6 +1756,33 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.009963736, y: 0.04048611, z: 0.2867816}
     m_Extent: {x: 0.16895811, y: 0.11889446, z: 0.22239278}
   m_DirtyAABB: 0
+--- !u!64 &8621606791985541582
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168952394931342543}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300010, guid: ca84dfa82a770a34faf2f9ddac95981e, type: 3}
+--- !u!114 &7842431582343142309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168952394931342543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28f246dce7cf9a94cacec73a1bcb6138, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bodyIdentification: 1
 --- !u!1 &168952394942442693
 GameObject:
   m_ObjectHideFlags: 0
@@ -1538,6 +1793,8 @@ GameObject:
   m_Component:
   - component: {fileID: 168952394942442692}
   - component: {fileID: 168952394942442695}
+  - component: {fileID: 7748490236930509427}
+  - component: {fileID: 2548775365938814472}
   m_Layer: 0
   m_Name: ' L Forearm'
   m_TagString: Zombie
@@ -1614,6 +1871,33 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.041451816, y: 0.47353816, z: 0.3538779}
     m_Extent: {x: 0.14636809, y: 0.19255386, z: 0.14603077}
   m_DirtyAABB: 0
+--- !u!64 &7748490236930509427
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168952394942442693}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: ca84dfa82a770a34faf2f9ddac95981e, type: 3}
+--- !u!114 &2548775365938814472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168952394942442693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28f246dce7cf9a94cacec73a1bcb6138, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bodyIdentification: 1
 --- !u!1 &168952394950032699
 GameObject:
   m_ObjectHideFlags: 0
@@ -1655,6 +1939,8 @@ GameObject:
   m_Component:
   - component: {fileID: 168952394978623843}
   - component: {fileID: 168952394978623842}
+  - component: {fileID: 1530035597203155042}
+  - component: {fileID: 6745330130778299356}
   m_Layer: 0
   m_Name: L Hand
   m_TagString: Zombie
@@ -1728,6 +2014,33 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.5705144, y: -0.17333402, z: -0.053062472}
     m_Extent: {x: 0.14890152, y: 0.11821227, z: 0.11044499}
   m_DirtyAABB: 0
+--- !u!114 &1530035597203155042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168952394978623840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28f246dce7cf9a94cacec73a1bcb6138, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bodyIdentification: 2
+--- !u!64 &6745330130778299356
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168952394978623840}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300006, guid: ca84dfa82a770a34faf2f9ddac95981e, type: 3}
 --- !u!1 &168952394984607458
 GameObject:
   m_ObjectHideFlags: 0
@@ -1738,6 +2051,8 @@ GameObject:
   m_Component:
   - component: {fileID: 168952394984607461}
   - component: {fileID: 168952394984607460}
+  - component: {fileID: 5482082774526074860}
+  - component: {fileID: 708032535726755771}
   m_Layer: 0
   m_Name: R Calf
   m_TagString: Zombie
@@ -1814,6 +2129,33 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.56144977, y: -0.035665564, z: -0.17178778}
     m_Extent: {x: 0.31089664, y: 0.15442342, z: 0.12632255}
   m_DirtyAABB: 0
+--- !u!64 &5482082774526074860
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168952394984607458}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300020, guid: ca84dfa82a770a34faf2f9ddac95981e, type: 3}
+--- !u!114 &708032535726755771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168952394984607458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28f246dce7cf9a94cacec73a1bcb6138, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bodyIdentification: 1
 --- !u!1 &168952395010745907
 GameObject:
   m_ObjectHideFlags: 0
@@ -1824,6 +2166,8 @@ GameObject:
   m_Component:
   - component: {fileID: 168952395010745906}
   - component: {fileID: 168952395010745909}
+  - component: {fileID: 4674587761916022545}
+  - component: {fileID: 1190773547044066274}
   m_Layer: 0
   m_Name: R Spine1
   m_TagString: Zombie
@@ -1903,6 +2247,33 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.42209792, y: 0.03413701, z: -0.04063773}
     m_Extent: {x: 0.22332203, y: 0.16127571, z: 0.2579201}
   m_DirtyAABB: 0
+--- !u!64 &4674587761916022545
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168952395010745907}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300026, guid: ca84dfa82a770a34faf2f9ddac95981e, type: 3}
+--- !u!114 &1190773547044066274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168952395010745907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28f246dce7cf9a94cacec73a1bcb6138, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bodyIdentification: 1
 --- !u!1 &168952395044778983
 GameObject:
   m_ObjectHideFlags: 0
@@ -2008,6 +2379,8 @@ GameObject:
   m_Component:
   - component: {fileID: 168952395121444844}
   - component: {fileID: 168952395121444847}
+  - component: {fileID: 7461485014049250942}
+  - component: {fileID: 8698319104115455684}
   m_Layer: 0
   m_Name: L Calf
   m_TagString: Zombie
@@ -2084,6 +2457,33 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.5616, y: -0.0327539, z: 0.17362973}
     m_Extent: {x: 0.31074697, y: 0.15151276, z: 0.12816474}
   m_DirtyAABB: 0
+--- !u!114 &7461485014049250942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168952395121444845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28f246dce7cf9a94cacec73a1bcb6138, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bodyIdentification: 1
+--- !u!64 &8698319104115455684
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168952395121444845}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300008, guid: ca84dfa82a770a34faf2f9ddac95981e, type: 3}
 --- !u!1 &168952395127805476
 GameObject:
   m_ObjectHideFlags: 0
@@ -2124,6 +2524,8 @@ GameObject:
   m_Component:
   - component: {fileID: 168952395160147887}
   - component: {fileID: 168952395160147886}
+  - component: {fileID: 8351389628416981430}
+  - component: {fileID: 9036470205823402032}
   m_Layer: 0
   m_Name: ' R Pelvis'
   m_TagString: Zombie
@@ -2200,6 +2602,33 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.0050251335, y: -0.079432935, z: 0.031810217}
     m_Extent: {x: 0.14492212, y: 0.11242977, z: 0.16120133}
   m_DirtyAABB: 0
+--- !u!64 &8351389628416981430
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168952395160147884}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300014, guid: ca84dfa82a770a34faf2f9ddac95981e, type: 3}
+--- !u!114 &9036470205823402032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168952395160147884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28f246dce7cf9a94cacec73a1bcb6138, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bodyIdentification: 1
 --- !u!1 &168952395266451669
 GameObject:
   m_ObjectHideFlags: 0
@@ -2302,6 +2731,8 @@ GameObject:
   m_Component:
   - component: {fileID: 168952395420023302}
   - component: {fileID: 168952395420023305}
+  - component: {fileID: 1800622801999793570}
+  - component: {fileID: 2249995050227652331}
   m_Layer: 0
   m_Name: R Hand
   m_TagString: Zombie
@@ -2374,6 +2805,33 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.3015614, y: -0.0019324645, z: 0.05306163}
     m_Extent: {x: 0.14694151, y: 0.10307154, z: 0.11044496}
   m_DirtyAABB: 0
+--- !u!64 &1800622801999793570
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168952395420023303}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300032, guid: ca84dfa82a770a34faf2f9ddac95981e, type: 3}
+--- !u!114 &2249995050227652331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168952395420023303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28f246dce7cf9a94cacec73a1bcb6138, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bodyIdentification: 2
 --- !u!1 &168952395504674534
 GameObject:
   m_ObjectHideFlags: 0
@@ -2384,6 +2842,8 @@ GameObject:
   m_Component:
   - component: {fileID: 168952395504674537}
   - component: {fileID: 168952395504674536}
+  - component: {fileID: 5948920716412106501}
+  - component: {fileID: 1937258781707673074}
   m_Layer: 0
   m_Name: L UpperArm
   m_TagString: Zombie
@@ -2461,3 +2921,30 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.41069087, y: -0.012730151, z: 0.25587755}
     m_Extent: {x: 0.160916, y: 0.12947766, z: 0.19883826}
   m_DirtyAABB: 0
+--- !u!64 &5948920716412106501
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168952395504674534}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300002, guid: ca84dfa82a770a34faf2f9ddac95981e, type: 3}
+--- !u!114 &1937258781707673074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168952395504674534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28f246dce7cf9a94cacec73a1bcb6138, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bodyIdentification: 1

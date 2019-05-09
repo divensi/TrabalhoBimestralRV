@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Fire
   - Pegavel
+  - Zombie
+  - Mapa
+  - Minimapa
   layers:
   - Default
   - TransparentFX
@@ -16,8 +19,8 @@ TagManager:
   - 
   - 
   - PostProcessing
-  - 
-  - 
+  - Mapa
+  - Minimapa
   - 
   - 
   - 

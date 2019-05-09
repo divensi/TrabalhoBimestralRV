@@ -46,7 +46,7 @@ public class ZombieWalk : MonoBehaviour
         if (animator.GetCurrentAnimatorStateInfo(0).IsName("Die")){
             morreu = true;
             audioSource.Stop();
-            agente.Stop();
+            agente.isStopped = true;
             Die();
         }
         

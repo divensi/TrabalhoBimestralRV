@@ -80,6 +80,7 @@ public class GravityGun : MonoBehaviour
         objectRB.constraints = RigidbodyConstraints.None;
         objectIHave.transform.parent = null;
         objectIHave = null;
+        objectRB.detectCollisions = true;
         hasObject = false;
     }
 
@@ -107,6 +108,7 @@ public class GravityGun : MonoBehaviour
 
                 objectRB = objectIHave.GetComponent<Rigidbody>();
                 objectRB.constraints = RigidbodyConstraints.FreezeAll;
+                objectRB.detectCollisions = false;
 
                 hasObject = true;
             }

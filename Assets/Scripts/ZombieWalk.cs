@@ -17,11 +17,13 @@ public class ZombieWalk : MonoBehaviour
     private bool morreu;
     private AudioSource audioSource;
     private float zombieDistance = 60;
+    public GameObject darkAnimation;
 
     private IEnumerator WaitForSceneLoad() 
     {
 	    yield return new WaitForSeconds(3);
-	    SceneManager.LoadScene(0); 
+	    //SceneManager.LoadScene(0); 
+	    Application.LoadLevel (0);
  	}
 
 
@@ -67,7 +69,7 @@ public class ZombieWalk : MonoBehaviour
         	 if (Player != null) {
 	        	if(Vector3.Distance (Player.transform.position,  transform.position  ) < 2.5){ // distancia, isso permite pular e nao morrer
 	        		// ToDo: adicionar animação de morte ( tela ficar escura, som de tripas sendo estouradas)
-	        		
+	        		//dark.animation.SetActive(true);
 	        		Destroy(Player,1.0f);//trocar por tela ficar escura e som de tripas estourando
 	        		//chamar a cena do menu
 	        		StartCoroutine(WaitForSceneLoad());

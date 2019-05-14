@@ -15,6 +15,7 @@ public class ZombieWalk : MonoBehaviour
     private GameObject Player; 
     private bool morreu;
     private AudioSource audioSource;
+    private float zombieDistance = 25.0;
 
     void Start()
     {
@@ -28,6 +29,15 @@ public class ZombieWalk : MonoBehaviour
     }
     void UpdateZombieDestination()
     {   
+       if(Vector3.Distance (Player.transform.position,  transform.position  ) > zombieDistance){
+            agente.isStopped= true;
+            animator.SetBool("Idle", true);
+            return;
+        }
+        if(agente.isStopped == true){
+            agente.isStopped= false;
+
+            }
         if (morreu){
             return;
         }

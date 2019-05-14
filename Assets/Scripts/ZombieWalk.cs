@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 public class ZombieWalk : MonoBehaviour
 {
 
@@ -17,6 +18,14 @@ public class ZombieWalk : MonoBehaviour
     private AudioSource audioSource;
     private float zombieDistance = 60;
 
+    private IEnumerator WaitForSceneLoad() 
+    {
+	    yield return new WaitForSeconds(3);
+	    SceneManager.LoadScene(0); 
+ 	}
+
+
+
     void Start()
     {
         morreu = false;
@@ -27,6 +36,9 @@ public class ZombieWalk : MonoBehaviour
         InvokeRepeating("UpdateZombieDestination", 0.0f, 0.3f);
         
     }
+
+  
+
     void UpdateZombieDestination()
     {   
     	if(Vector3.Distance (Player.transform.position,  transform.position  ) > zombieDistance){
@@ -51,6 +63,20 @@ public class ZombieWalk : MonoBehaviour
         Walking();
         animator.SetBool("Walk", walking);
         animator.SetBool("Attack", !walking);
+        if(!walking){
+        	 if (Player != null) {
+	        	if(Vector3.Distance (Player.transform.position,  transform.position  ) < 2.5){ // distancia, isso permite pular e nao morrer
+	        		// ToDo: adicionar animação de morte ( tela ficar escura, som de tripas sendo estouradas)
+	        		
+	        		Destroy(Player,1.0f);//trocar por tela ficar escura e som de tripas estourando
+	        		//chamar a cena do menu
+	        		StartCoroutine(WaitForSceneLoad());
+     
+
+	        	}
+	        }	
+        	
+        }
         
     }   
     private void FixedUpdate()

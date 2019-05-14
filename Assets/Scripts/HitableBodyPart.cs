@@ -15,6 +15,7 @@ public class HitableBodyPart : MonoBehaviour {
     private CharaterDamage charaterDamage;
     Animator animator;
     
+    
     private void Awake()
     {
         charaterDamage = GetComponentInParent<CharaterDamage>();
@@ -24,7 +25,6 @@ public class HitableBodyPart : MonoBehaviour {
     {
         charaterDamage.OnBeingHit(bodyIdentification);
         animator.SetBool("Die", true);
-        //Die();
     }
 
     private void Die()

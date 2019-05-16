@@ -5,6 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class MenuScript : MonoBehaviour
 {
+    void Start () {
+ 
+         Cursor.visible = true;
+         Cursor.lockState = CursorLockMode.None; 
+     }
     public void Sair() 
     {
         #if UNITY_EDITOR

@@ -17,8 +17,11 @@ public class ZombieWalk : MonoBehaviour
     private bool morreu;
     private AudioSource audioSource;
     private float zombieDistance = 60;
+    private bool ativarCarregamento;
+    private float tempoCarregamento;
     public GameObject darkAnimation;
-
+    public Texture textura;
+    Color cor = Color.black;
     private IEnumerator WaitForSceneLoad() 
     {
 	    yield return new WaitForSeconds(3);
@@ -31,11 +34,14 @@ public class ZombieWalk : MonoBehaviour
     void Start()
     {
         morreu = false;
+        tempoCarregamento = 0.0f;
+        ativarCarregamento=false;
         Player = GameObject.FindGameObjectWithTag("Player");
         agente = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
         InvokeRepeating("UpdateZombieDestination", 0.0f, 0.3f);
+
         
     }
 
@@ -67,12 +73,13 @@ public class ZombieWalk : MonoBehaviour
         animator.SetBool("Attack", !walking);
         if(!walking){
         	 if (Player != null) {
-	        	if(Vector3.Distance (Player.transform.position,  transform.position  ) < 2.5){ // distancia, isso permite pular e nao morrer
+	        	if(Vector3.Distance (Player.transform.position,  transform.position  ) <= 2.5){ // distancia, isso permite pular e nao morrer
 	        		// ToDo: adicionar animação de morte ( tela ficar escura, som de tripas sendo estouradas)
 	        		//dark.animation.SetActive(true);
-	        		Destroy(Player,1.0f);//trocar por tela ficar escura e som de tripas estourando
+	        		ativarCarregamento = true;
+	        		//Destroy(Player,1.0f);//trocar por tela ficar escura e som de tripas estourando
 	        		//chamar a cena do menu
-	        		StartCoroutine(WaitForSceneLoad());
+	        		//StartCoroutine(WaitForSceneLoad());
      
 
 	        	}
@@ -81,6 +88,19 @@ public class ZombieWalk : MonoBehaviour
         }
         
     }   
+
+    void OnGUI(){
+    	Debug.Log((int)(tempoCarregamento * 100.0f));
+    	
+    	cor.a =(int)(tempoCarregamento * 100.0f);
+    	GUI.color = cor;
+    	
+    	GUI.DrawTexture(new Rect (0,0,Screen.width,Screen.height),textura);
+    	//cor.a = tempoCarregamento;	
+		//GUI.color = cor;
+    }
+
+
     private void FixedUpdate()
     {
         if (animator.GetCurrentAnimatorStateInfo(0).IsName("Die")){
@@ -88,6 +108,16 @@ public class ZombieWalk : MonoBehaviour
             audioSource.Stop();
             agente.isStopped = true;
             Die();
+        }
+        
+        if (ativarCarregamento == true){
+
+        	tempoCarregamento += Time.deltaTime;
+
+        	if(tempoCarregamento>=3){
+        		ativarCarregamento = false;
+        		Application.LoadLevel (0);
+        	}
         }
         
         //UpdateZombieDestination();

@@ -3,7 +3,9 @@ guid: b0ae44c039feffc47950277364239773
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - darkAnimation: {instanceID: 0}
+  - textura: {fileID: 2800000, guid: f546779d9ee0f1e45a550ea4b41597ea, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

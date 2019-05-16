@@ -1972,6 +1972,11 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 1505243299}
+    - target: {fileID: 168952394204724381, guid: 71b72749a9b820d998ec2ca9d573716a,
+        type: 3}
+      propertyPath: textura
+      value: 
+      objectReference: {fileID: 8400000, guid: 844e3772e184c40b5a992a6f5e97999d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71b72749a9b820d998ec2ca9d573716a, type: 3}
 --- !u!1 &1607096742
@@ -2586,6 +2591,31 @@ PrefabInstance:
       propertyPath: m_ClearFlags
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5714601561658888470, guid: db7083dfa32a84d93a3ceef0283ccfe4,
+        type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0.060742237
+      objectReference: {fileID: 0}
+    - target: {fileID: 5714601561658888470, guid: db7083dfa32a84d93a3ceef0283ccfe4,
+        type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0.06280159
+      objectReference: {fileID: 0}
+    - target: {fileID: 5714601561658888470, guid: db7083dfa32a84d93a3ceef0283ccfe4,
+        type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0.066037714
+      objectReference: {fileID: 0}
+    - target: {fileID: 5714601561658888470, guid: db7083dfa32a84d93a3ceef0283ccfe4,
+        type: 3}
+      propertyPath: m_Depth
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5714601561658888470, guid: db7083dfa32a84d93a3ceef0283ccfe4,
+        type: 3}
+      propertyPath: m_TargetTexture
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5714601561658396438, guid: db7083dfa32a84d93a3ceef0283ccfe4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2685,6 +2715,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_CullingMask.m_Bits
       value: 1536
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982003061574262640, guid: db7083dfa32a84d93a3ceef0283ccfe4,
+        type: 3}
+      propertyPath: m_Depth
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 2326490887730840129, guid: db7083dfa32a84d93a3ceef0283ccfe4,
         type: 3}

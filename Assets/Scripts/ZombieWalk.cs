@@ -19,7 +19,7 @@ public class ZombieWalk : MonoBehaviour
     private AudioSource audioSourceAttack;
     private AudioSource audioSourceGrito;
     private Color cor = Color.black;
-    private float zombieDistance = 60;
+    private float zombieDistance = 30;
     private bool ativarCarregamento;
     private float tempoCarregamento;
     public Texture textura;
@@ -97,9 +97,8 @@ public class ZombieWalk : MonoBehaviour
     }   
 
     void OnGUI(){
-    	cor.a =(int)(tempoCarregamento*10.0f);
+    	cor.a =(int)(tempoCarregamento);
     	GUI.color = cor;
-    	
     	GUI.DrawTexture(new Rect (0,0,Screen.width,Screen.height),textura);
     }
 

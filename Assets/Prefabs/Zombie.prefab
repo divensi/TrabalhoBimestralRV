@@ -845,7 +845,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0ae44c039feffc47950277364239773, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  darkAnimation: {fileID: 0}
   textura: {fileID: 8400000, guid: 844e3772e184c40b5a992a6f5e97999d, type: 2}
 --- !u!114 &168952394204724378
 MonoBehaviour:

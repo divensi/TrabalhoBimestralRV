@@ -10,7 +10,6 @@
 - [✅] Fazer com que Zombies mortos parem parados e dar um Destroy() neles depois de alguns segundos;
 - [✅] Arrumar bug após player morrer (liberar o mouse para o menu).
 - [✅] escurecer camera e adicionar som de tripas estourando quando o player morrer.
-- [✅] Resolver problema de som alto após iniciar o jogo 2 vezes.
 - [✅] Menu;
 - [✅] Minimapa;
 - [☑️] Pontuação;

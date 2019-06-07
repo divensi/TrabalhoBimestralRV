@@ -51,7 +51,10 @@ public class ZombieWalk : MonoBehaviour
         
     }
 
-  
+    /* private void OnCollisionEnter(Collision collision)
+    {
+        animator.SetBool("Die", true);
+    } */
 
     void UpdateZombieDestination()
     {   

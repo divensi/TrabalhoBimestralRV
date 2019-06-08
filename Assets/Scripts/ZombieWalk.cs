@@ -51,9 +51,18 @@ public class ZombieWalk : MonoBehaviour
         
     }
 
-    /* private void OnCollisionEnter(Collision collision)
+     /* private void OnCollisionEnter(Collision collision)
     {
-        animator.SetBool("Die", true);
+        
+        if(collision != null){
+            Debug.Log("colisao");
+            animator.SetBool("Die", true);
+            morreu = true;
+            audioSource.Stop();
+            agente.isStopped = true;
+            Die();
+            
+            }
     } */
 
     void UpdateZombieDestination()
@@ -78,8 +87,10 @@ public class ZombieWalk : MonoBehaviour
 
         posicaoNova = agente.nextPosition;
         Walking();
+        if (!animator.GetBool("Die")){
         animator.SetBool("Walk", walking);
         animator.SetBool("Attack", !walking);
+        }
         if(!walking){
         	 if (Player != null) {
 	        	if(Vector3.Distance (Player.transform.position,  transform.position  ) <= 2.5 && ativarCarregamento== false){ // distancia, isso permite pular e nao morrer
@@ -108,12 +119,14 @@ public class ZombieWalk : MonoBehaviour
 
     private void Update()
     {
-        if (animator.GetCurrentAnimatorStateInfo(0).IsName("Die")){
+         //if (animator.GetCurrentAnimatorStateInfo(0).IsName("Die") || animator.GetCurrentAnimatorStateInfo(0).IsName("down")){
+        if (animator.GetBool("Die") && !morreu){
+            Debug.Log("MORREU");
             morreu = true;
             audioSource.Stop();
             agente.isStopped = true;
             Die();
-        }
+        } 
         
         if (ativarCarregamento == true){
 

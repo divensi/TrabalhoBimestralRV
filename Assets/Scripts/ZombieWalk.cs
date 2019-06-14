@@ -72,15 +72,15 @@ public class ZombieWalk : MonoBehaviour
             animator.SetBool("Idle", true);
             return;
         }
-
+        if (morreu){
+            return;
+        }
         if(agente.isStopped == true){
             agente.isStopped= false;
 
             }
 
-        if (morreu){
-            return;
-        }
+        
         if (Player != null) {
             agente.destination = Player.transform.position; 
         }
@@ -134,7 +134,7 @@ public class ZombieWalk : MonoBehaviour
 
         	if(tempoCarregamento>=5){
         		ativarCarregamento = false;
-        		Application.LoadLevel (0);
+        		Application.LoadLevel (2);
         	}
         }
         

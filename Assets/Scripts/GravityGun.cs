@@ -18,16 +18,41 @@ public class GravityGun : MonoBehaviour
     private Rigidbody objectRB;
 
     private bool hasObject = false;
+    public Canvas CanvasObject;
+
 
 
 
     private void Start()
     {
         throwForce = minThrowForce;
+        CanvasObject.GetComponent<Canvas>().enabled = false;
     }
 
     private void Update()
     {
+    //Screen.showCursor = false;
+    //Screen.lockCursor = true;
+     if(Input.GetKeyDown("escape"))     
+     {
+                 
+         if (Time.timeScale == 1.0f)
+         {            
+             Time.timeScale = 0.0f;
+             //Screen.showCursor = true;
+             //Screen.lockCursor = false;
+             CanvasObject.GetComponent<Canvas>().enabled = true;
+         }       
+             
+         else
+         {
+             CanvasObject.GetComponent<Canvas>().enabled = false;
+             Time.timeScale = 1.0f;    
+             //Screen.showCursor = false;
+             //Screen.lockCursor = true;                    
+         }
+         
+     }
         if (Input.GetMouseButtonDown(1) && !hasObject)
         {
             DoRay();

@@ -123,6 +123,7 @@
      <Compile Include="Assets\Scripts\Gun.cs" />
      <Compile Include="Assets\Scripts\HitableBodyPart.cs" />
      <Compile Include="Assets\Scripts\MenuScript.cs" />
+     <Compile Include="Assets\Scripts\MenuScriptResume.cs" />
      <Compile Include="Assets\Scripts\PistolaController.cs" />
      <Compile Include="Assets\Scripts\Target.cs" />
      <Compile Include="Assets\Scripts\ZombieWalk - Copia.cs" />

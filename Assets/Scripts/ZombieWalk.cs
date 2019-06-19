@@ -23,6 +23,7 @@ public class ZombieWalk : MonoBehaviour
     private bool ativarCarregamento;
     private float tempoCarregamento;
     public Texture textura;
+    private bool inPause;
     
 
     private IEnumerator WaitForSceneLoad() 
@@ -36,6 +37,7 @@ public class ZombieWalk : MonoBehaviour
 
     void Start()
     {
+        inPause = false;
         morreu = false;
         tempoCarregamento = 0.0f;
         ativarCarregamento=false;
@@ -134,11 +136,25 @@ public class ZombieWalk : MonoBehaviour
 
         	if(tempoCarregamento>=5){
         		ativarCarregamento = false;
-        		Application.LoadLevel (2);
+        		Application.LoadLevel(2);
         	}
         }
         
-        //UpdateZombieDestination();
+        //pause sound in menu
+        
+        if (Time.timeScale != 1.0f && inPause == false)
+         {
+            inPause = true;
+            audioSource.Stop();//zombie som
+            audioSourceAttack.Stop(); // attack
+            audioSourceGrito.Stop(); // grito
+            Debug.Log("inpause");
+
+         }else if (Time.timeScale == 1.0f && inPause == true){
+            Debug.Log("no inpause");
+            inPause = false;
+            audioSource.Play();
+         }
         
     }
     private void Walking()

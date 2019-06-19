@@ -9,6 +9,7 @@ public class MenuScript : MonoBehaviour
  
          Cursor.visible = true;
          Cursor.lockState = CursorLockMode.None; 
+         //Time.timeScale = 1.0f; 
      }
     public void Sair() 
     {

@@ -19,11 +19,14 @@ public class ZombieWalk : MonoBehaviour
     private AudioSource audioSourceAttack;
     private AudioSource audioSourceGrito;
     private Color cor = Color.black;
-    private float zombieDistance = 30;
+    private float zombieDistance = 50;
     private bool ativarCarregamento;
     private float tempoCarregamento;
     public Texture textura;
     private bool inPause;
+    private Object obSpawnPoints;
+    private Transform spawnPoints;
+
     
 
     private IEnumerator WaitForSceneLoad() 
@@ -50,6 +53,9 @@ public class ZombieWalk : MonoBehaviour
         audioSourceAttack = audioSources[1]; // attack
         audioSourceGrito = audioSources[2]; // grito
 
+
+        spawnPoints = GameObject.Find ("ZombiesSpawnPoints").transform;
+
         
     }
 
@@ -72,6 +78,8 @@ public class ZombieWalk : MonoBehaviour
     	if(Vector3.Distance (Player.transform.position,  transform.position  ) > zombieDistance){
             agente.isStopped= true;
             animator.SetBool("Idle", true);
+            //SpawnNewZombie();
+            Destroy(gameObject,5.0f);
             return;
         }
         if (morreu){
@@ -119,11 +127,13 @@ public class ZombieWalk : MonoBehaviour
     }
 
 
-    private void Update()
+    void Update()
     {
+        
          //if (animator.GetCurrentAnimatorStateInfo(0).IsName("Die") || animator.GetCurrentAnimatorStateInfo(0).IsName("down")){
         if (animator.GetBool("Die") && !morreu){
             Debug.Log("MORREU");
+            SpawnNewZombie();
             morreu = true;
             audioSource.Stop();
             agente.isStopped = true;
@@ -136,7 +146,7 @@ public class ZombieWalk : MonoBehaviour
 
         	if(tempoCarregamento>=5){
         		ativarCarregamento = false;
-        		Application.LoadLevel(2);
+        		Application.LoadLevel(0);
         	}
         }
         
@@ -148,10 +158,9 @@ public class ZombieWalk : MonoBehaviour
             audioSource.Stop();//zombie som
             audioSourceAttack.Stop(); // attack
             audioSourceGrito.Stop(); // grito
-            Debug.Log("inpause");
 
          }else if (Time.timeScale == 1.0f && inPause == true){
-            Debug.Log("no inpause");
+            
             inPause = false;
             audioSource.Play();
          }
@@ -174,5 +183,29 @@ public class ZombieWalk : MonoBehaviour
     {
         Destroy(gameObject,5.0f);
     }
+    private void SpawnNewZombie()
+    {
+
+            Transform closest = spawnPoints.GetChild(0);
+            // Find the closest spawn point.
+            for (int i = 0; i < spawnPoints.childCount; ++i)
+            {
+                Transform thisTransform = spawnPoints.GetChild(i);
+
+                float distanceToClosest = Vector3.Distance(closest.position, Player.transform.position);
+                float distanceToThis = Vector3.Distance(thisTransform.position, Player.transform.position);
+
+                if (distanceToThis < distanceToClosest)
+                {
+                    closest = thisTransform;
+                }
+            }
+
+            GameObject instance = Instantiate(Resources.Load("Zombie", typeof(GameObject))) as GameObject;
+            //instance.transform.position =  closest.position;
+            instance.transform.position = new Vector3(closest.position.x, closest.position.y + 1.0f, closest.position.z);
+            //instanciar o zombie
+
+        }
 
 }

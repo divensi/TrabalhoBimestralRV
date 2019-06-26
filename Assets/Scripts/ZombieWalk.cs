@@ -55,7 +55,7 @@ public class ZombieWalk : MonoBehaviour
 
 
         spawnPoints = GameObject.Find ("ZombiesSpawnPoints").transform;
-
+        //dar tapa no zombie
         
     }
 

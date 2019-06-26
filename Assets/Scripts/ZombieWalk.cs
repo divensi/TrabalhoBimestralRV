@@ -78,8 +78,8 @@ public class ZombieWalk : MonoBehaviour
     	if(Vector3.Distance (Player.transform.position,  transform.position  ) > zombieDistance){
             agente.isStopped= true;
             animator.SetBool("Idle", true);
-            //SpawnNewZombie();
-            Destroy(gameObject,5.0f);
+            SpawnRandomZombie();
+            Destroy(gameObject);
             return;
         }
         if (morreu){
@@ -183,6 +183,43 @@ public class ZombieWalk : MonoBehaviour
     {
         Destroy(gameObject,5.0f);
     }
+
+    private void SpawnRandomZombie()
+    {
+        
+            Transform closest = spawnPoints.GetChild(0);
+            // Find the closest spawn point.
+
+            List<Transform> transformList = new List<Transform>();  
+
+            for (int i = 0; i < spawnPoints.childCount; ++i)
+            {
+                Transform thisTransform = spawnPoints.GetChild(i);
+
+                float distanceToClosest = Vector3.Distance(closest.position, Player.transform.position);
+                float distanceToThis = Vector3.Distance(thisTransform.position, Player.transform.position);
+
+
+                if (distanceToThis < 55)
+                {
+                    transformList.Add(thisTransform);
+                }
+            }
+            if( transformList.Count > 0){
+                GameObject instance = Instantiate(Resources.Load("Zombie", typeof(GameObject))) as GameObject;
+                //instance.transform.position =  closest.position;
+                Debug.Log(transformList.Count);
+                closest = transformList[Random.Range(0, transformList.Count)];
+                instance.transform.position = new Vector3(closest.position.x, closest.position.y + 0.4f, closest.position.z);
+                //instanciar o zombie
+            }
+        }
+
+        
+        
+
+
+
     private void SpawnNewZombie()
     {
 
@@ -203,9 +240,10 @@ public class ZombieWalk : MonoBehaviour
 
             GameObject instance = Instantiate(Resources.Load("Zombie", typeof(GameObject))) as GameObject;
             //instance.transform.position =  closest.position;
-            instance.transform.position = new Vector3(closest.position.x, closest.position.y + 1.0f, closest.position.z);
+            instance.transform.position = new Vector3(closest.position.x, closest.position.y + 0.4f, closest.position.z);
             //instanciar o zombie
 
         }
+
 
 }

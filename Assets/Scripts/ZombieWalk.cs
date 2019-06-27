@@ -207,6 +207,7 @@ public class ZombieWalk : MonoBehaviour
                 }
             }
             if( transformList.Count > 0){
+
                 GameObject instance = Instantiate(Resources.Load("Zombie", typeof(GameObject))) as GameObject;
                 //instance.transform.position =  closest.position;
                 //Debug.Log(transformList.Count);
@@ -247,9 +248,18 @@ public class ZombieWalk : MonoBehaviour
                     closest = thisTransform;
                 }
             }
-
-            GameObject instance = Instantiate(Resources.Load("Zombie", typeof(GameObject))) as GameObject;
+            GameObject instance;
             NavMeshHit hit;
+
+            if(gameObject.CompareTag("Zombie")){
+                instance = Instantiate(Resources.Load("Zombie", typeof(GameObject))) as GameObject;
+            } 
+            else{
+                instance = Instantiate(Resources.Load("meltyzombie", typeof(GameObject))) as GameObject;
+                instance.transform.localScale +=  new Vector3(1.0f,1.0f,1.0f);
+            } 
+
+            
             if(NavMesh.SamplePosition(new Vector3(closest.position.x, closest.position.y, closest.position.z), out hit, 1.0f, NavMesh.AllAreas)){
                 instance.transform.position= hit.position;
                 Debug.Log("spawn correto");

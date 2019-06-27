@@ -1568,14 +1568,14 @@ GameObject:
   - component: {fileID: 2258155365790698488}
   - component: {fileID: 2258155365781611928}
   - component: {fileID: 2258155365791092989}
-  - component: {fileID: 6016782161288278042}
+  - component: {fileID: 6863814646150323562}
   - component: {fileID: 7180371537340436721}
   - component: {fileID: 7180371537340436720}
   - component: {fileID: 7180371537340436734}
   - component: {fileID: 8750361658006964189}
   m_Layer: 0
-  m_Name: meltyzombie-morre-so-com-colisao-na-cabeca
-  m_TagString: Zombie
+  m_Name: meltyzombie
+  m_TagString: Zombie2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1640,7 +1640,7 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 1
   m_ObstacleAvoidanceType: 4
---- !u!114 &6016782161288278042
+--- !u!114 &6863814646150323562
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1649,10 +1649,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2258155365791127512}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7942add267aa702628018bf8325ef0ce, type: 3}
+  m_Script: {fileID: 11500000, guid: 1ea08110a2fda48928c4b922d512b17f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textura: {fileID: 8400000, guid: 844e3772e184c40b5a992a6f5e97999d, type: 2}
 --- !u!82 &7180371537340436721
 AudioSource:
   m_ObjectHideFlags: 0

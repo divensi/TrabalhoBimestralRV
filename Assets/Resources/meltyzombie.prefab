@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 2774101074680315541}
   m_Layer: 0
   m_Name: meltyzombie
-  m_TagString: Zombie
+  m_TagString: Zombie2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

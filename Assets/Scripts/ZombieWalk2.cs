@@ -109,8 +109,6 @@ public class ZombieWalk2 : MonoBehaviour
                         audioSourceAttack.Play();
                         audioSourceGrito.Play();
                         ativarCarregamento = true;
-                        //chamar a cena do menu
-                        //StartCoroutine(WaitForSceneLoad());
          
 
                     }
@@ -250,7 +248,7 @@ public class ZombieWalk2 : MonoBehaviour
 
             GameObject instance = Instantiate(Resources.Load("meltyzombie", typeof(GameObject))) as GameObject;
             instance.transform.localScale +=  new Vector3(1.0f,1.0f,1.0f);
-            
+
             NavMeshHit hit;
             if(NavMesh.SamplePosition(new Vector3(closest.position.x, closest.position.y, closest.position.z), out hit, 1.0f, NavMesh.AllAreas)){
                 instance.transform.position= hit.position;

@@ -24,7 +24,6 @@ public class HitableBodyPart : MonoBehaviour {
     private void OnCollisionEnter(Collision collision)
     {
         if(collision != null ){
-        Debug.Log("entrou aqui");
         //charaterDamage.OnBeingHit(bodyIdentification);
         animator.SetBool("Walk", false);
         animator.SetBool("Attack",  false);

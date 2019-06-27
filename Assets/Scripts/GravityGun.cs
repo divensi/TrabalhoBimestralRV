@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.AI;
 public class GravityGun : MonoBehaviour
 {
     public Camera cam;
@@ -21,6 +21,13 @@ public class GravityGun : MonoBehaviour
     public Canvas CanvasObject;
 
 
+
+    private IEnumerator WaitForObstacleActive(NavMeshObstacle navmeshobs) 
+    {
+        yield return new WaitForSeconds(1);
+        navmeshobs.enabled= true; 
+    
+    }
 
 
     private void Start()
@@ -103,9 +110,15 @@ public class GravityGun : MonoBehaviour
     private void ReleaseObject()
     {
         objectRB.constraints = RigidbodyConstraints.None;
+        var navmeshobs= objectIHave.GetComponent<NavMeshObstacle>();
+        StartCoroutine(WaitForObstacleActive(navmeshobs));
+
+        
         objectIHave.transform.parent = null;
         objectIHave = null;
         objectRB.detectCollisions = true;
+        
+
         hasObject = false;
     }
 
@@ -131,6 +144,8 @@ public class GravityGun : MonoBehaviour
                 // define o objeto como filho do Player para movimentar corretamente
                 objectIHave.transform.SetParent(holdPos);
 
+                var navmeshobs= objectIHave.GetComponent<NavMeshObstacle>();
+                navmeshobs.enabled= false;
                 objectRB = objectIHave.GetComponent<Rigidbody>();
                 objectRB.constraints = RigidbodyConstraints.FreezeAll;
                 objectRB.detectCollisions = false;

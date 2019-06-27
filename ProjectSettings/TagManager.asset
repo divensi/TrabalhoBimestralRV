@@ -9,6 +9,7 @@ TagManager:
   - Zombie
   - Mapa
   - Minimapa
+  - Zombie2
   layers:
   - Default
   - TransparentFX

@@ -5674,15 +5674,15 @@ PrefabInstance:
       propertyPath: m_Radius
       value: 0.7
       objectReference: {fileID: 0}
-    - target: {fileID: 7552888344183554271, guid: 71b72749a9b820d998ec2ca9d573716a,
-        type: 3}
-      propertyPath: m_Convex
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 168952394204724381, guid: 71b72749a9b820d998ec2ca9d573716a,
         type: 3}
       propertyPath: spawnPoints
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7552888344183554271, guid: 71b72749a9b820d998ec2ca9d573716a,
+        type: 3}
+      propertyPath: m_Convex
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71b72749a9b820d998ec2ca9d573716a, type: 3}
@@ -7741,6 +7741,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: meltyzombie-morre-so-com-colisao-na-cabeca (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258155365791127512, guid: 650c08e71b878714baccb27f4ca00553,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2258155365790698488, guid: 650c08e71b878714baccb27f4ca00553,
         type: 3}
@@ -12486,6 +12491,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: meltyzombie-morre-so-com-colisao-na-cabeca (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 2258155365791127512, guid: 650c08e71b878714baccb27f4ca00553,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2258155365790698488, guid: 650c08e71b878714baccb27f4ca00553,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13198,6 +13208,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: meltyzombie-morre-so-com-colisao-na-cabeca (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258155365791127512, guid: 650c08e71b878714baccb27f4ca00553,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2258155365790698488, guid: 650c08e71b878714baccb27f4ca00553,
         type: 3}
@@ -16947,6 +16962,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: meltyzombie-morre-so-com-colisao-na-cabeca (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 2258155365791127512, guid: 650c08e71b878714baccb27f4ca00553,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2258155365790698488, guid: 650c08e71b878714baccb27f4ca00553,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17340,6 +17360,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: meltyzombie-morre-so-com-colisao-na-cabeca (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258155365791127512, guid: 650c08e71b878714baccb27f4ca00553,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2258155365790698488, guid: 650c08e71b878714baccb27f4ca00553,
         type: 3}
@@ -18577,6 +18602,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: meltyzombie-morre-so-com-colisao-na-cabeca (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 2258155365791127512, guid: 650c08e71b878714baccb27f4ca00553,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2258155365790698488, guid: 650c08e71b878714baccb27f4ca00553,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18746,6 +18776,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: meltyzombie-morre-so-com-colisao-na-cabeca (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258155365791127512, guid: 650c08e71b878714baccb27f4ca00553,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2258155365790698488, guid: 650c08e71b878714baccb27f4ca00553,
         type: 3}
@@ -19780,6 +19815,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: meltyzombie-morre-so-com-colisao-na-cabeca (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258155365791127512, guid: 650c08e71b878714baccb27f4ca00553,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2258155365790698488, guid: 650c08e71b878714baccb27f4ca00553,
         type: 3}
@@ -30477,6 +30517,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: meltyzombie-morre-so-com-colisao-na-cabeca (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 2258155365791127512, guid: 650c08e71b878714baccb27f4ca00553,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2258155365790698488, guid: 650c08e71b878714baccb27f4ca00553,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -35986,6 +36031,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: meltyzombie-morre-so-com-colisao-na-cabeca (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258155365791127512, guid: 650c08e71b878714baccb27f4ca00553,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2258155365790698488, guid: 650c08e71b878714baccb27f4ca00553,
         type: 3}
@@ -42300,6 +42350,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: meltyzombie-morre-so-com-colisao-na-cabeca (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 2258155365791127512, guid: 650c08e71b878714baccb27f4ca00553,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2258155365790698488, guid: 650c08e71b878714baccb27f4ca00553,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -42463,6 +42518,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: meltyzombie-morre-so-com-colisao-na-cabeca
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258155365791127512, guid: 650c08e71b878714baccb27f4ca00553,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2258155365790698488, guid: 650c08e71b878714baccb27f4ca00553,
         type: 3}
@@ -44957,6 +45017,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: meltyzombie-morre-so-com-colisao-na-cabeca (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 2258155365791127512, guid: 650c08e71b878714baccb27f4ca00553,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2258155365790698488, guid: 650c08e71b878714baccb27f4ca00553,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -45510,6 +45575,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: meltyzombie-morre-so-com-colisao-na-cabeca (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258155365791127512, guid: 650c08e71b878714baccb27f4ca00553,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2258155365790698488, guid: 650c08e71b878714baccb27f4ca00553,
         type: 3}
@@ -47408,6 +47478,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: meltyzombie-morre-so-com-colisao-na-cabeca (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 2258155365791127512, guid: 650c08e71b878714baccb27f4ca00553,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2258155365790698488, guid: 650c08e71b878714baccb27f4ca00553,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -48504,6 +48579,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: meltyzombie-morre-so-com-colisao-na-cabeca (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2258155365791127512, guid: 650c08e71b878714baccb27f4ca00553,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2258155365790698488, guid: 650c08e71b878714baccb27f4ca00553,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -49403,6 +49483,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: meltyzombie-morre-so-com-colisao-na-cabeca (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2258155365791127512, guid: 650c08e71b878714baccb27f4ca00553,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2258155365790698488, guid: 650c08e71b878714baccb27f4ca00553,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -49566,6 +49651,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: meltyzombie-morre-so-com-colisao-na-cabeca (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258155365791127512, guid: 650c08e71b878714baccb27f4ca00553,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2258155365790698488, guid: 650c08e71b878714baccb27f4ca00553,
         type: 3}
@@ -50433,7 +50523,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1830843543
 RectTransform:
   m_ObjectHideFlags: 0
@@ -51986,6 +52076,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: meltyzombie-morre-so-com-colisao-na-cabeca (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258155365791127512, guid: 650c08e71b878714baccb27f4ca00553,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2258155365790698488, guid: 650c08e71b878714baccb27f4ca00553,
         type: 3}
@@ -54277,6 +54372,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: meltyzombie-morre-so-com-colisao-na-cabeca (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258155365791127512, guid: 650c08e71b878714baccb27f4ca00553,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2258155365790698488, guid: 650c08e71b878714baccb27f4ca00553,
         type: 3}
@@ -59210,6 +59310,90 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 5132695776287891295}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4755382215411304749
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 565687698}
+    m_Modifications:
+    - target: {fileID: 4399413649054867756, guid: d937b79be6610494bbdd178205c6179e,
+        type: 3}
+      propertyPath: m_Name
+      value: meltyzombie
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399413649054907660, guid: d937b79be6610494bbdd178205c6179e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399413649054907660, guid: d937b79be6610494bbdd178205c6179e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399413649054907660, guid: d937b79be6610494bbdd178205c6179e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399413649054907660, guid: d937b79be6610494bbdd178205c6179e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399413649054907660, guid: d937b79be6610494bbdd178205c6179e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399413649054907660, guid: d937b79be6610494bbdd178205c6179e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399413649054907660, guid: d937b79be6610494bbdd178205c6179e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399413649054907660, guid: d937b79be6610494bbdd178205c6179e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399413649054907660, guid: d937b79be6610494bbdd178205c6179e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399413649054907660, guid: d937b79be6610494bbdd178205c6179e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399413649054907660, guid: d937b79be6610494bbdd178205c6179e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 1.5350001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399413649054907660, guid: d937b79be6610494bbdd178205c6179e,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399413649054907660, guid: d937b79be6610494bbdd178205c6179e,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399413649054907660, guid: d937b79be6610494bbdd178205c6179e,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d937b79be6610494bbdd178205c6179e, type: 3}
 --- !u!1001 &5132695776287891295
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59501,95 +59685,6 @@ MonoBehaviour:
   blendDistance: 0
   weight: 1
   priority: 0
---- !u!1001 &7180371537948180441
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 565687698}
-    m_Modifications:
-    - target: {fileID: 2258155365791127512, guid: 650c08e71b878714baccb27f4ca00553,
-        type: 3}
-      propertyPath: m_Name
-      value: meltyzombie
-      objectReference: {fileID: 0}
-    - target: {fileID: 2258155365790698488, guid: 650c08e71b878714baccb27f4ca00553,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2258155365790698488, guid: 650c08e71b878714baccb27f4ca00553,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2258155365790698488, guid: 650c08e71b878714baccb27f4ca00553,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2258155365790698488, guid: 650c08e71b878714baccb27f4ca00553,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2258155365790698488, guid: 650c08e71b878714baccb27f4ca00553,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2258155365790698488, guid: 650c08e71b878714baccb27f4ca00553,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2258155365790698488, guid: 650c08e71b878714baccb27f4ca00553,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2258155365790698488, guid: 650c08e71b878714baccb27f4ca00553,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 2258155365790698488, guid: 650c08e71b878714baccb27f4ca00553,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2258155365790698488, guid: 650c08e71b878714baccb27f4ca00553,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2258155365790698488, guid: 650c08e71b878714baccb27f4ca00553,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 1.5350001
-      objectReference: {fileID: 0}
-    - target: {fileID: 2258155365790698488, guid: 650c08e71b878714baccb27f4ca00553,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2258155365790698488, guid: 650c08e71b878714baccb27f4ca00553,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2258155365790698488, guid: 650c08e71b878714baccb27f4ca00553,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2258155365791092989, guid: 650c08e71b878714baccb27f4ca00553,
-        type: 3}
-      propertyPath: m_Radius
-      value: 0.8
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 650c08e71b878714baccb27f4ca00553, type: 3}
 --- !u!1001 &8897662072679891815
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59671,7 +59766,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 6c27a742d2c5a144bab717764ab85206, type: 3}
 --- !u!4 &9003638527457571873 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 2258155365790698488, guid: 650c08e71b878714baccb27f4ca00553,
+  m_CorrespondingSourceObject: {fileID: 4399413649054907660, guid: d937b79be6610494bbdd178205c6179e,
     type: 3}
-  m_PrefabInstance: {fileID: 7180371537948180441}
+  m_PrefabInstance: {fileID: 4755382215411304749}
   m_PrefabAsset: {fileID: 0}

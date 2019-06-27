@@ -56,7 +56,7 @@ public class ZombieWalk : MonoBehaviour
 
         spawnPoints = GameObject.Find ("ZombiesSpawnPoints").transform;
         //dar tapa no zombie
-        
+
     }
 
      /* private void OnCollisionEnter(Collision collision)
@@ -75,49 +75,50 @@ public class ZombieWalk : MonoBehaviour
 
     void UpdateZombieDestination()
     {   
-    	if(Vector3.Distance (Player.transform.position,  transform.position  ) > zombieDistance){
-            agente.isStopped= true;
-            animator.SetBool("Idle", true);
-            SpawnRandomZombie();
-            Destroy(gameObject);
-            return;
-        }
-        if (morreu){
-            return;
-        }
-        if(agente.isStopped == true){
-            agente.isStopped= false;
+        if(agente.isOnNavMesh){
+        	if(Vector3.Distance (Player.transform.position,  transform.position  ) > zombieDistance){
+                agente.isStopped= true;
+                animator.SetBool("Idle", true);
+                SpawnRandomZombie();
+                Destroy(gameObject);
+                return;
+            }
+            if (morreu){
+                return;
+            }
+            if(agente.isStopped == true){
+                agente.isStopped= false;
 
+                }
+
+            
+            if (Player != null) {
+                agente.destination = Player.transform.position; 
             }
 
-        
-        if (Player != null) {
-            agente.destination = Player.transform.position; 
-        }
+            posicaoNova = agente.nextPosition;
+            Walking();
+            if (!animator.GetBool("Die")){
+            animator.SetBool("Walk", walking);
+            animator.SetBool("Attack", !walking);
+            }
+            if(!walking){
+            	 if (Player != null) {
+    	        	if(Vector3.Distance (Player.transform.position,  transform.position  ) <= 2.5 && ativarCarregamento== false){ // distancia, isso permite pular e nao morrer
+    	        		// ToDo: adicionar animação de morte ( tela ficar escura, som de tripas sendo estouradas)
+    	        		audioSource.Stop();
+     					audioSourceAttack.Play();
+     					audioSourceGrito.Play();
+    	        		ativarCarregamento = true;
+    	        		//chamar a cena do menu
+    	        		//StartCoroutine(WaitForSceneLoad());
+         
 
-        posicaoNova = agente.nextPosition;
-        Walking();
-        if (!animator.GetBool("Die")){
-        animator.SetBool("Walk", walking);
-        animator.SetBool("Attack", !walking);
+    	        	}
+    	        }	
+            	
+            }
         }
-        if(!walking){
-        	 if (Player != null) {
-	        	if(Vector3.Distance (Player.transform.position,  transform.position  ) <= 2.5 && ativarCarregamento== false){ // distancia, isso permite pular e nao morrer
-	        		// ToDo: adicionar animação de morte ( tela ficar escura, som de tripas sendo estouradas)
-	        		audioSource.Stop();
- 					audioSourceAttack.Play();
- 					audioSourceGrito.Play();
-	        		ativarCarregamento = true;
-	        		//chamar a cena do menu
-	        		//StartCoroutine(WaitForSceneLoad());
-     
-
-	        	}
-	        }	
-        	
-        }
-        
     }   
 
     void OnGUI(){
@@ -208,10 +209,20 @@ public class ZombieWalk : MonoBehaviour
             if( transformList.Count > 0){
                 GameObject instance = Instantiate(Resources.Load("Zombie", typeof(GameObject))) as GameObject;
                 //instance.transform.position =  closest.position;
-                Debug.Log(transformList.Count);
+                //Debug.Log(transformList.Count);
                 closest = transformList[Random.Range(0, transformList.Count)];
-                instance.transform.position = new Vector3(closest.position.x, closest.position.y + 0.4f, closest.position.z);
-                //instanciar o zombie
+                NavMeshHit hit;
+                if(NavMesh.SamplePosition(new Vector3(closest.position.x+Random.Range(0.0f, 1.5f), closest.position.y+Random.Range(0.0f, 1.5f), closest.position.z+Random.Range(0.0f, 1.5f)), out hit, 2.0f, NavMesh.AllAreas)){
+                    instance.transform.position= hit.position;
+                    Debug.Log("spawn correto");
+                }
+                else{
+                    //instanciar o zombie
+                    instance.transform.position = new Vector3(closest.position.x+Random.Range(0.0f, 0.5f), closest.position.y + 0.4f+Random.Range(0.0f, 0.2f), closest.position.z +Random.Range(0.0f, 0.5f));
+                    //transform.position = new Vector3(transform.position.x+Random.Range(0.0f, 0.5f), transform.position.y+Random.Range(0.0f, 0.5f), transform.position.z+Random.Range(0.0f, 0.5f)); 
+                    Debug.Log("spawn incorreto");
+                    
+                }
             }
         }
 
@@ -228,7 +239,6 @@ public class ZombieWalk : MonoBehaviour
             for (int i = 0; i < spawnPoints.childCount; ++i)
             {
                 Transform thisTransform = spawnPoints.GetChild(i);
-
                 float distanceToClosest = Vector3.Distance(closest.position, Player.transform.position);
                 float distanceToThis = Vector3.Distance(thisTransform.position, Player.transform.position);
 
@@ -239,8 +249,18 @@ public class ZombieWalk : MonoBehaviour
             }
 
             GameObject instance = Instantiate(Resources.Load("Zombie", typeof(GameObject))) as GameObject;
+            NavMeshHit hit;
+            if(NavMesh.SamplePosition(new Vector3(closest.position.x, closest.position.y, closest.position.z), out hit, 1.0f, NavMesh.AllAreas)){
+                instance.transform.position= hit.position;
+                Debug.Log("spawn correto");
+            }
+            else{
+
+                instance.transform.position = new Vector3(closest.position.x, closest.position.y + 0.4f, closest.position.z);
+                Debug.Log("spawn incorreto");
+            }
             //instance.transform.position =  closest.position;
-            instance.transform.position = new Vector3(closest.position.x, closest.position.y + 0.4f, closest.position.z);
+            
             //instanciar o zombie
 
         }

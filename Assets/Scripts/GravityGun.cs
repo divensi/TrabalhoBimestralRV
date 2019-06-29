@@ -20,7 +20,7 @@ public class GravityGun : MonoBehaviour
     private bool hasObject = false;
     public Canvas CanvasObject;
 
-
+    private PlayerEnergyController gameControl;
 
     private IEnumerator WaitForObstacleActive(NavMeshObstacle navmeshobs) 
     {
@@ -34,6 +34,7 @@ public class GravityGun : MonoBehaviour
     {
         throwForce = minThrowForce;
         CanvasObject.GetComponent<Canvas>().enabled = false;
+        gameControl = GetComponent(typeof(PlayerEnergyController)) as  PlayerEnergyController;
     }
 
     private void Update()
@@ -140,17 +141,27 @@ public class GravityGun : MonoBehaviour
         {
             if (hit.collider.CompareTag("Pegavel"))
             {
+
                 objectIHave = hit.collider.gameObject;
-                // define o objeto como filho do Player para movimentar corretamente
-                objectIHave.transform.SetParent(holdPos);
-
-                var navmeshobs= objectIHave.GetComponent<NavMeshObstacle>();
-                navmeshobs.enabled= false;
                 objectRB = objectIHave.GetComponent<Rigidbody>();
-                objectRB.constraints = RigidbodyConstraints.FreezeAll;
-                objectRB.detectCollisions = false;
+                var objectMass = objectRB.mass;
+                if(objectMass <= gameControl.GetPower()){
+                    gameControl.RemovePower(objectMass);
+                    
+                    // define o objeto como filho do Player para movimentar corretamente
+                    objectIHave.transform.SetParent(holdPos);
+                    // desabilita o NavMeshObstacle evitando bug de desvio do zombie
+                    var navmeshobs= objectIHave.GetComponent<NavMeshObstacle>();
+                    navmeshobs.enabled= false;
+                    
 
-                hasObject = true;
+                    objectRB.constraints = RigidbodyConstraints.FreezeAll;
+                    objectRB.detectCollisions = false;
+
+                    hasObject = true;
+                }else{
+                    Debug.Log("erro falta de energia");
+                }
             }
         }
 

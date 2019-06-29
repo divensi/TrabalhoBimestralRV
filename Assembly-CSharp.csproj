@@ -119,12 +119,14 @@
      <Compile Include="Assets\Packages\Standard Assets\Utility\WaypointProgressTracker.cs" />
      <Compile Include="Assets\Packages\Starfield Skybox\Demo\Script\LookCamera.cs" />
      <Compile Include="Assets\Scripts\CharaterDamage.cs" />
+     <Compile Include="Assets\Scripts\CheckpointController.cs" />
      <Compile Include="Assets\Scripts\GravityGun.cs" />
      <Compile Include="Assets\Scripts\Gun.cs" />
      <Compile Include="Assets\Scripts\HitableBodyPart.cs" />
      <Compile Include="Assets\Scripts\MenuScript.cs" />
      <Compile Include="Assets\Scripts\MenuScriptResume.cs" />
      <Compile Include="Assets\Scripts\PistolaController.cs" />
+     <Compile Include="Assets\Scripts\PlayerEnergyController.cs" />
      <Compile Include="Assets\Scripts\Target.cs" />
      <Compile Include="Assets\Scripts\ZombieWalk - Copia.cs" />
      <Compile Include="Assets\Scripts\ZombieWalk.cs" />

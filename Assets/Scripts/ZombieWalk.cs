@@ -137,7 +137,10 @@ public class ZombieWalk : MonoBehaviour
             SpawnNewZombie();
             morreu = true;
             audioSource.Stop();
-            agente.isStopped = true;
+            if(agente.isOnNavMesh){
+                agente.isStopped = true;
+            }
+            
             Die();
         } 
         
@@ -215,13 +218,11 @@ public class ZombieWalk : MonoBehaviour
                 NavMeshHit hit;
                 if(NavMesh.SamplePosition(new Vector3(closest.position.x+Random.Range(0.0f, 1.5f), closest.position.y+Random.Range(0.0f, 1.5f), closest.position.z+Random.Range(0.0f, 1.5f)), out hit, 2.0f, NavMesh.AllAreas)){
                     instance.transform.position= hit.position;
-                    Debug.Log("spawn correto");
                 }
                 else{
                     //instanciar o zombie
                     instance.transform.position = new Vector3(closest.position.x+Random.Range(0.0f, 0.5f), closest.position.y + 0.4f+Random.Range(0.0f, 0.2f), closest.position.z +Random.Range(0.0f, 0.5f));
                     //transform.position = new Vector3(transform.position.x+Random.Range(0.0f, 0.5f), transform.position.y+Random.Range(0.0f, 0.5f), transform.position.z+Random.Range(0.0f, 0.5f)); 
-                    Debug.Log("spawn incorreto");
                     
                 }
             }
@@ -262,12 +263,10 @@ public class ZombieWalk : MonoBehaviour
             
             if(NavMesh.SamplePosition(new Vector3(closest.position.x, closest.position.y, closest.position.z), out hit, 1.0f, NavMesh.AllAreas)){
                 instance.transform.position= hit.position;
-                Debug.Log("spawn correto");
             }
             else{
 
                 instance.transform.position = new Vector3(closest.position.x, closest.position.y + 0.4f, closest.position.z);
-                Debug.Log("spawn incorreto");
             }
             //instance.transform.position =  closest.position;
             

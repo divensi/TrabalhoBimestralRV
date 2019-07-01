@@ -6,13 +6,14 @@ public class CheckpointController : MonoBehaviour
 {
     private PlayerEnergyController gameControl;
     public float Power= 2.0f;
+    private float spinSpeed = 70.0f;
 	void Start() {
         gameControl= (PlayerEnergyController) GameObject.Find("Player").GetComponent(typeof(PlayerEnergyController));
         
     }
 
     void OnTriggerEnter(Collider other){
-        Debug.Log("colisão");
+        //Debug.Log("colisão");
     	if(other.CompareTag("Player")){
     		gameControl.AddPower(Power);
             Destroy(gameObject);
@@ -20,6 +21,6 @@ public class CheckpointController : MonoBehaviour
     } 
     void Update()
     {
-        
+        transform.Rotate(0,0,spinSpeed*Time.deltaTime);
     }
 }

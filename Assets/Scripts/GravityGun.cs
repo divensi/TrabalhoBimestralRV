@@ -19,6 +19,7 @@ public class GravityGun : MonoBehaviour
 
     private bool hasObject = false;
     public Canvas CanvasObject;
+    private float actualScale;
 
     private PlayerEnergyController gameControl;
 
@@ -35,10 +36,18 @@ public class GravityGun : MonoBehaviour
         throwForce = minThrowForce;
         CanvasObject.GetComponent<Canvas>().enabled = false;
         gameControl = GetComponent(typeof(PlayerEnergyController)) as  PlayerEnergyController;
+        actualScale = gameControl.GetScale();
     }
 
     private void Update()
     {
+     float scale =  gameControl.GetScale();
+    if (actualScale != scale ){
+            float difScale = scale - actualScale;
+            transform.localScale +=  new Vector3(difScale,difScale,difScale);
+            actualScale = scale;
+        
+    }
     //Screen.showCursor = false;
     //Screen.lockCursor = true;
      if(Input.GetKeyDown("escape"))     

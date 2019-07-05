@@ -104,7 +104,10 @@ public class ZombieWalk : MonoBehaviour
             }
             if(!walking){
             	 if (Player != null) {
-    	        	if(Vector3.Distance (Player.transform.position,  transform.position  ) <= 2.5 && ativarCarregamento== false){ // distancia, isso permite pular e nao morrer
+                    var distancia = 2.5;
+                    if(gameObject.CompareTag("Zombie2")) distancia = 2;
+
+    	        	if(Vector3.Distance (Player.transform.position,  transform.position  ) <= distancia && ativarCarregamento== false){ // distancia, isso permite pular e nao morrer
     	        		// ToDo: adicionar animação de morte ( tela ficar escura, som de tripas sendo estouradas)
     	        		audioSource.Stop();
      					audioSourceAttack.Play();
@@ -204,7 +207,7 @@ public class ZombieWalk : MonoBehaviour
                 float distanceToThis = Vector3.Distance(thisTransform.position, Player.transform.position);
 
 
-                if (distanceToThis < 55)
+                if (distanceToThis < 40)
                 {
                     transformList.Add(thisTransform);
                 }

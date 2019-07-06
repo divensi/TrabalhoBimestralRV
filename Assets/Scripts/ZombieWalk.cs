@@ -59,7 +59,9 @@ public class ZombieWalk : MonoBehaviour
 
     }
 
-     /* private void OnCollisionEnter(Collision collision)
+   
+
+    /*private void OnCollisionEnter(Collision collision)
     {
         
         if(collision != null){

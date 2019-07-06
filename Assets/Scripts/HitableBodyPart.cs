@@ -22,13 +22,18 @@ public class HitableBodyPart : MonoBehaviour {
         animator = GetComponentInParent<Animator>();
     }
     private void OnCollisionEnter(Collision collision)
-    {
+    { 
+
         if(collision != null ){
-        //charaterDamage.OnBeingHit(bodyIdentification);
-        animator.SetBool("Walk", false);
-        animator.SetBool("Attack",  false);
-        animator.SetBool("Die", true);
-        
+        Debug.Log("collision "+gameObject.tag);
+        if(gameObject.CompareTag("chefao")){
+                Debug.Log("chefao colisao");
+         }else{ //normal zombie kill 
+            //charaterDamage.OnBeingHit(bodyIdentification);
+            animator.SetBool("Walk", false);
+            animator.SetBool("Attack",  false);
+            animator.SetBool("Die", true);
+        } 
         }
     }
 

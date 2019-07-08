@@ -149,7 +149,6 @@
      <None Include="Assets\Packages\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
      <None Include="Assets\Packages\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
      <None Include="Assets\Packages\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
-     <None Include="Assets\SkySerie Freebie\Hdri setup.txt" />
      <None Include="Assets\Packages\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/utfpr/Desktop/AulasRV/Trabalho-Semestral/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

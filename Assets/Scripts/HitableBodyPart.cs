@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,12 +10,15 @@ public enum BodyIdentification
     Hand
 }
 
+
 public class HitableBodyPart : MonoBehaviour {
     [SerializeField]private BodyIdentification bodyIdentification;
     private CharaterDamage charaterDamage;
     Animator animator;
-    
-    
+    float life;
+    void Start(){
+        life = 100f;
+    }
     private void Awake()
     {
         charaterDamage = GetComponentInParent<CharaterDamage>();
@@ -27,7 +30,7 @@ public class HitableBodyPart : MonoBehaviour {
         if(collision != null ){
         Debug.Log("collision "+gameObject.tag);
         if(gameObject.CompareTag("chefao")){
-                Debug.Log("chefao colisao");
+                //collision.gameObject.
          }else{ //normal zombie kill 
             //charaterDamage.OnBeingHit(bodyIdentification);
             animator.SetBool("Walk", false);
